@@ -51,7 +51,7 @@ Alternatively, you can also expose the service through the loadbalancer - which 
 
 AKS Process overview:
 
-![processess](https://github.com/gkaleta/AKS-with-WeaveWorks-Scope/blob/master/images/aks-processes.png "Processes")
+![AKS Process overview](/images/aks-processes.png "AKS Process overview")
 
 <p>
 <p>
@@ -59,3 +59,4 @@ AKS Process overview:
 
 AKS Pod overview:
 
+![AKS Process overview](/images/aks-pods.png "AKS pod overview")
