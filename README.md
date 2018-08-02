@@ -1,4 +1,4 @@
-# Up and running with WeaveWorks with AKS
+# Up and running with WeaveWorks on AKS
 ## Prerequsites
 1. Running AKS cluster 
 2. Full admin access to AKS cluster
@@ -31,4 +31,6 @@ Now, verify that you the pods are up and running:
 **NAMESPACE   |     NAME                              READY     STATUS    RESTARTS   AGE**
 weave         |     weave-scope-agent-4wdkm           1/1      Running    0          1d
 weave         |     weave-scope-agent-rt4wm           1/1      Running    0          1d
-weave         |     weave-scope-app-7f5f76bf89-clf6h  1/1       Running   0          1d
+weave         |     weave-scope-app-7f5f76bf89-clf6h  1/1      Running   0           1d
+
+
