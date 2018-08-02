@@ -40,7 +40,13 @@ weave              weave-scope-app-7f5f76bf89-clf6h  1/1      Running    0      
 **You should now be able to browse your localhost:**<p>
 `http://localhost`
 
-Alternatively, you can also expose the service through the loadbalancer:
+Alternatively, you can also expose the service through the loadbalancer - which means the whole world can access it:
 
 `kubectl expose pod --namespace weave weave-scope-app-7f5f76bf89-clf6h --type=LoadBalancer`
+
+## Dashboard examples of AKS running:
+
+AKS Process overview:
+
+AKS Pod overview:
 
