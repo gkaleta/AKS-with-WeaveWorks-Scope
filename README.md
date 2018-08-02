@@ -26,11 +26,11 @@ Now, verify that you the pods are up and running:
 
 `kubectl get pods --all-namespaces`
 
-**Notice that you now have a new namespace called weave**
+**Notice that you now have a new namespace called weave**<p>
 
-**NAMESPACE   |     NAME                              READY     STATUS    RESTARTS   AGE**
-weave         |     weave-scope-agent-4wdkm           1/1      Running    0          1d
-weave         |     weave-scope-agent-rt4wm           1/1      Running    0          1d
-weave         |     weave-scope-app-7f5f76bf89-clf6h  1/1      Running   0           1d
+**NAMESPACE   |     NAME                              READY     STATUS    RESTARTS   AGE**<p>
+weave         |     weave-scope-agent-4wdkm           1/1      Running    0          1d<p>
+weave         |     weave-scope-agent-rt4wm           1/1      Running    0          1d<p>
+weave         |     weave-scope-app-7f5f76bf89-clf6h  1/1      Running   0           1d<p>
 
 
