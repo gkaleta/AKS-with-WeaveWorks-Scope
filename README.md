@@ -38,7 +38,7 @@ weave              weave-scope-app-7f5f76bf89-clf6h  1/1      Running    0      
 
 ## Run Scope in your browser and test everything out
 
-`kubectl port-forward -n weave "$(kubectl get -n weave pod --selector=weave-scope-component=app -o jsonpath='{.items..metadata.name}')" 4040`
+`kubectl port-forward -n weave "$(kubectl get -n weave pod --selector=weave-scope-component=app -o jsonpath='{.items..metadata.name}')"`
 
 **You should now be able to browse your localhost**<p>
 `http://localhost:4040`
