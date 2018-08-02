@@ -28,9 +28,19 @@ Now, verify that you the pods are up and running:
 
 **Notice that you now have a new namespace called weave**<p>
 
-**NAMESPACE   |     NAME                              READY     STATUS    RESTARTS   AGE**<p>
-weave         |     weave-scope-agent-4wdkm           1/1      Running    0          1d<p>
-weave         |     weave-scope-agent-rt4wm           1/1      Running    0          1d<p>
-weave         |     weave-scope-app-7f5f76bf89-clf6h  1/1      Running   0           1d<p>
+**NAMESPACE        NAME                              READY     STATUS    RESTARTS   AGE**<p>
+weave              weave-scope-agent-4wdkm           1/1      Running    0          1d<p>
+weave              weave-scope-agent-rt4wm           1/1      Running    0          1d<p>
+weave              weave-scope-app-7f5f76bf89-clf6h  1/1      Running    0           1d<p>
 
+## Run Scope in your browser and test everything out
+
+`kubectl port-forward -n weave "$(kubectl get -n weave pod --selector=weave-scope-component=app -o jsonpath='{.items..metadata.name}')" 4040`
+
+**You should now be able to browse your localhost:**<p>
+`http://localhost`
+
+Alternatively, you can also expose the service through the loadbalancer:
+
+`kubectl expose pod --namespace weave weave-scope-app-7f5f76bf89-clf6h --type=LoadBalancer`
 
